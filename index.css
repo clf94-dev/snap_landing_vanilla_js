@@ -37,6 +37,26 @@ li.company-tab, li.features-tab{
     background-color: hsl(0, 0%, 41%);
     transform: rotate(40deg);
 }
+.company-tab.active::before, .features-tab.active::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    width: 5px;
+    height:2px;
+    background-color: hsl(0, 0%, 41%);
+    transform: rotate(40deg);
+}
+.company-tab.active::after, .features-tab.active::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: 19px;
+    width: 5px;
+    height:2px;
+    background-color: hsl(0, 0%, 41%);
+    transform: rotate(-40deg);
+}
 .company-tab::after, .features-tab::after {
     content: '';
     position: absolute;

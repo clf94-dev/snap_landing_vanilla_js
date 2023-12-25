@@ -3,6 +3,8 @@ const navSlide = () => {
     const nav = document.querySelector('.nav-links');
     const shadowContainer = document.querySelector('.navbar-shadow')
     const navLinks = document.querySelectorAll('.nav-links li');
+
+    const featuresDropdown = document.querySelector('.features-tab')
     
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
@@ -19,6 +21,13 @@ const navSlide = () => {
 
         burger.classList.toggle('burger-active');
     });
+
+    featuresDropdown.addEventListener('click', () => {
+        if(featuresDropdown.classList.contains('active')){
+            featuresDropdown.classList.remove('active')
+        }else {
+            featuresDropdown.classList.add('active')}
+    })
 }
 
 navSlide();
