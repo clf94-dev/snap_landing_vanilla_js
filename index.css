@@ -24,6 +24,29 @@ nav {
     justify-content: space-between;
 
 }
+li.company-tab, li.features-tab{
+    position: relative;
+}
+.company-tab::before, .features-tab::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: 19px;
+    width: 5px;
+    height:2px;
+    background-color: hsl(0, 0%, 41%);
+    transform: rotate(40deg);
+}
+.company-tab::after, .features-tab::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    width: 5px;
+    height:2px;
+    background-color: hsl(0, 0%, 41%);
+    transform: rotate(-40deg);
+}
 .navbar-tabs-container{
     display: flex;
     
@@ -32,7 +55,8 @@ nav {
 .nav-links li{
     list-style: none;
     align-items: start;
-    margin-right: 20px;
+
+    padding-right: 30px;
 }
 
 .nav-links a {
