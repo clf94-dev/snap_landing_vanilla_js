@@ -122,3 +122,41 @@ body{
     }
 }
 
+@media (max-width: 760px){
+    .content {
+        display: flex;
+        padding: 50px 30px;
+    
+    }
+    .imgCol {
+        padding-left: 0;
+     }
+    .textCol{
+        padding: 10px 20px 0 0;
+    }
+    .titleContainer {
+        padding: 10px 0;
+    }
+    .title1, .title2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .learnBtn{
+        margin: 7px 0;
+    }
+    .description{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .learnBtn{
+       font-size: 12px;
+       font-family: 'Epilogue', sans-serif;
+       font-weight: 500;
+       height: 40px;
+       width: fit-content;
+       padding: 0 25px;
+       border: 1px solid  hsl(0, 0%, 8%); ;
+       border-radius: 10px;
+    }
+}
+
