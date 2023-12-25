@@ -6,6 +6,10 @@ const navSlide = () => {
 
     const featuresDropdown = document.querySelector('.features-tab')
     const featuresOptions = document.querySelector('.options-features')
+
+    const companyDropdown = document.querySelector('.company-tab')
+    const companyOptions = document.querySelector('.options-company')
+
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         shadowContainer.classList.toggle('navbar-shadow-active')
@@ -29,6 +33,15 @@ const navSlide = () => {
         }else {
             featuresDropdown.classList.add('active')
             featuresOptions.classList.add('active')
+        }
+    })
+    companyDropdown.addEventListener('click', () => {
+        if(companyDropdown.classList.contains('active')){
+            companyDropdown.classList.remove('active')
+            companyOptions.classList.remove('active')
+        }else {
+            companyDropdown.classList.add('active')
+            companyOptions.classList.add('active')
         }
     })
 }
