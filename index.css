@@ -1,6 +1,7 @@
 body{
     font-family: 'Epilogue', sans-serif;
     margin: 0;
+    background-color: hsl(0, 0%, 98%); ;
 }
 
 nav {
@@ -66,6 +67,30 @@ li.company-tab, li.features-tab{
     height:2px;
     background-color: hsl(0, 0%, 41%);
     transform: rotate(-40deg);
+}
+.options-features{
+    display: none;
+}
+.options-features.active {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 2;
+}
+.option{
+    display: flex;
+    padding: 10px 5px;
+    font-size:13px;
+    align-items: center;
+}
+.feature-icon {
+    font-size: 18px;
+    margin-right:13px;
 }
 .navbar-tabs-container{
     display: flex;

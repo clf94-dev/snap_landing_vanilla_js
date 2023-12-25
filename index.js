@@ -5,7 +5,7 @@ const navSlide = () => {
     const navLinks = document.querySelectorAll('.nav-links li');
 
     const featuresDropdown = document.querySelector('.features-tab')
-    
+    const featuresOptions = document.querySelector('.options-features')
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         shadowContainer.classList.toggle('navbar-shadow-active')
@@ -25,8 +25,11 @@ const navSlide = () => {
     featuresDropdown.addEventListener('click', () => {
         if(featuresDropdown.classList.contains('active')){
             featuresDropdown.classList.remove('active')
+            featuresOptions.classList.remove('active')
         }else {
-            featuresDropdown.classList.add('active')}
+            featuresDropdown.classList.add('active')
+            featuresOptions.classList.add('active')
+        }
     })
 }
 
