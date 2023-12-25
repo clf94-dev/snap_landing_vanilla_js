@@ -77,6 +77,18 @@ nav {
     border-color:hsl(0, 0%, 8%);
 }
 
+.burger{
+    display: none;
+  }
+
+.burger div{
+    width:25px;
+    height:2px;
+    background-color:#000;
+    margin: 5px;
+    transition: all 0.3s ease
+    
+  }
 .content {
     display: flex;
     padding: 50px 120px;
@@ -159,6 +171,10 @@ nav {
     margin: 10px;
     width: auto;
     height: auto;
+}
+
+.navbar-shadow{
+    display: none;
 }
 @media (max-width: 1360px) {
     .content {
@@ -356,6 +372,69 @@ nav {
         padding: 0 25px;
         border: 1px solid  hsl(0, 0%, 8%); ;
         border-radius: 15px;
+    }
+
+    body{
+        overflow: hidden;
+    }
+
+    nav {
+        padding: 10px 15px;
+
+    }
+    .left-items-nav {
+        height: 40px;
+    }
+    .logo-img {
+        margin-top: 10px;
+    }
+    .right-items-nav {
+        padding-bottom: 0;
+    }
+
+    .nav-links{
+        position:absolute;
+        right:0px;
+        height: 92vh;
+        z-index: 3;
+        top: 60px;
+        min-height: 800px;
+        background-color:#fff;
+        display:flex;
+        flex-direction: column;  
+        align-items: center;
+        width:58%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+      }
+
+    .right-items-nav{
+        justify-content: end;
+    }
+    .login-btn,.register-btn {
+        display: none;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .navbar-shadow-active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        z-index: 2;
+        height: 92vh;
+        width: 100%;
+        background-color: #000;
+        opacity:  0.5;
     }
 
 }
