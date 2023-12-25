@@ -18,15 +18,21 @@ nav {
     width: 70%;
 }
 .nav-links {
-    display: flex;
-    width: 50%;
+
+    width: 35%;
     margin: 0 0 10px 0;
     justify-content: space-between;
 
 }
+.navbar-tabs-container{
+    display: flex;
+    
+    justify-content: space-between;
+}
 .nav-links li{
     list-style: none;
     align-items: start;
+    margin-right: 20px;
 }
 
 .nav-links a {
@@ -34,6 +40,9 @@ nav {
     text-decoration: none;
     font-weight: 500;
     font-size: 13px;
+}
+.nav-links .mobile-btns {
+    display: none;
 }
 .nav-links a:hover {
     cursor: pointer;
@@ -396,19 +405,57 @@ nav {
         position:absolute;
         right:0px;
         top: 0;
-        height: 100vh;
+        height: 91vh;
         z-index: 3;
         background-color:#fff;
         display:flex;
-        flex-direction: column;  
-        align-items: center;
+        flex-direction: column; 
+        padding: 8vh 20px 10px 20px;
+        align-items: start;
+        justify-content: space-between;
         width:58%;
-        transform: translateX(100%);
+        transform: translateX(98%);
         transition: transform 0.5s ease-in;
+    }
+    .navbar-tabs-container{
+        display: flex;
+        flex-direction: column;
     }
     .nav-links li{
         opacity: 0;
-      }
+        z-index: 4;
+
+        margin-bottom: 25px;
+    }
+    .mobile-btn-row{
+        width: 100%;
+        margin: 0 auto 5px auto;
+    }
+    .nav-links .mobile-btns {
+        display: flex ;
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .mobile-btns .login-btn, .mobile-btns .register-btn{
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+       
+    }
+    .mobile-btns .login-btn {
+        margin-bottom: 20px;
+    }
+    .mobile-btns .register-btn {
+        width: 100%;
+    }
+    .nav-links a{
+        font-size: 16px !important;
+        font-weight: 700;
+    }
 
     .right-items-nav{
         justify-content: end;
@@ -436,5 +483,31 @@ nav {
         background-color: #000;
         opacity:  0.5;
     }
+
+    @keyframes navLinkFade{
+        from{
+            opacity:0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    
+   .burger-active .line1{
+        transform: rotate(-45deg) translate(-5px,0);
+    }
+  
+    .burger-active .line2{
+        display: none;
+        transition: ease-in-out 0.3s;
+    }
+  
+    .burger-active .line3{
+        transform: rotate(45deg) translate(-5px,0);
+    }
+    
+ 
 
 }
