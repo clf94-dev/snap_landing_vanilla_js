@@ -2,12 +2,21 @@ body{
     font-family: 'Epilogue', sans-serif;
     margin: 0;
 }
+
+nav {
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
 .content {
     display: flex;
     padding: 50px 120px;
 
 }
-.textCol{
+.text-col{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -16,32 +25,32 @@ body{
     position: relative;
     justify-content: space-between;
 }
-.imgCol  {
+.img-col  {
     display: block;
     width: 50%;
     padding-left: 50px;
 }
-.heroDesktopImg{
+.hero-desktop-img{
     display: block;
     object-fit: cover;
     width: 100%;
 }
-.heroMobileImg {
+.hero-mobile-img {
     display: none;
 }
-.titleContainer{
+.title-container{
     display: flex;
     flex-direction: column;
     color: hsl(0, 0%, 8%);
     font-weight: 700;
     padding: 45px 0;
  }
- .title1, .title2 {
+ .title-1, .title-2 {
     margin: 0;
     font-size: 75px;
     font-weight: 700;
  }
- .titleMobile {
+ .title-mobile {
     display: none;
  }
 .description {
@@ -50,7 +59,7 @@ body{
     font-size: 18px;
     margin-top: 0;
 }
-.learnBtn{
+.learn-btn{
     margin: 30px 0;
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
@@ -62,7 +71,7 @@ body{
     border: 1px solid  hsl(0, 0%, 8%); ;
     border-radius: 15px;
 }
-.learnBtn:hover {
+.learn-btn:hover {
     cursor: pointer;
     background-color: hsl(0, 0%, 98%);
     color:  hsl(0, 0%, 8%);
@@ -79,7 +88,7 @@ body{
   
 
 }
-.clientLogo{
+.client-logo{
     flex-direction: column;
     margin: 10px;
     width: auto;
@@ -91,17 +100,17 @@ body{
         padding: 50px 100px;
     
     }
-    .textCol {
+    .text-col {
         padding: 30px 20px 0 0;
     }
-    .titleContainer {
+    .title-container {
         padding: 40px 0;
     }
-    .title1, .title2 {
+    .title-1, .title-2 {
         font-size: 60px;
         font-weight: 700;
     }
-    .learnBtn{
+    .learn-btn{
         margin: 30px 0;
         background-color: hsl(0, 0%, 8%);
         color: hsl(0, 0%, 98%);
@@ -113,7 +122,7 @@ body{
         border: 1px solid  hsl(0, 0%, 8%); ;
         border-radius: 15px;
     }
-    .learnBtn:hover {
+    .learn-btn:hover {
         cursor: pointer;
         background-color: hsl(0, 0%, 98%);
         color:  hsl(0, 0%, 8%);
@@ -128,17 +137,17 @@ body{
         padding: 50px 100px;
     
     }
-    .textCol {
+    .text-col {
         padding: 30px 40px 0 0;
     }
-    .titleContainer {
+    .title-container {
         padding: 30px 0;
     }
-    .title1, .title2 {
+    .title-1, .title-2 {
         font-size: 48px;
         font-weight: 700;
     }
-    .learnBtn{
+    .learn-btn{
         margin:15px 0;
     }
     .description{
@@ -152,23 +161,23 @@ body{
         padding: 50px 60px;
     
     }
-    .textCol {
+    .text-col {
         padding: 10px 20px 0 0;
     }
-    .titleContainer {
+    .title-container {
         padding: 20px 0;
     }
-    .title1, .title2 {
+    .title-1, .title-2 {
         font-size: 24px;
         font-weight: 700;
     }
-    .learnBtn{
+    .learn-btn{
         margin: 7px 0;
     }
     .description{
         font-size: 13px;
     }
-    .learnBtn{
+    .learn-btn{
        font-size: 13px;
     }
 }
@@ -179,27 +188,27 @@ body{
         padding: 50px 30px;
     
     }
-    .imgCol {
+    .img-col {
         padding-left: 0;
      }
-    .textCol{
+    .text-col{
         padding: 10px 20px 0 0;
     }
-    .titleContainer {
+    .title-container {
         padding: 10px 0;
     }
-    .title1, .title2 {
+    .title-1, .title-2 {
         font-size: 20px;
         font-weight: 700;
     }
-    .learnBtn{
+    .learn-btn{
         margin: 7px 0;
     }
     .description{
         font-size: 13px;
         line-height: 18px;
     }
-    .learnBtn{
+    .learn-btn{
        font-size: 11px;
        font-family: 'Epilogue', sans-serif;
        font-weight: 500;
@@ -219,21 +228,21 @@ body{
         padding: 50px 0;
     
     }
-    .imgCol {
+    .img-col {
         padding-left: 0;
         width: 100%;
      }
-    .textCol{
+    .text-col{
       
         width: auto;
         padding: 15px;
         text-align: center;
        
     }
-    .heroDesktopImg{
+    .hero-desktop-img{
         display: none;
     }
-    .heroMobileImg {
+    .hero-mobile-img {
         display: block;
         object-fit: cover;
         width: 100%;
@@ -241,23 +250,23 @@ body{
     .infoSection{
         width: 100%;
     }
-    .titleContainer {
+    .title-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding: 20px 0;
     }
 
-    .title1, .title2 {
+    .title-1, .title-2 {
         display: none;
      }
-     .titleMobile {
+     .title-mobile {
         display: block;
         margin: 0;
         font-size: 32px;
         font-weight: 700;
      }
-    .learnBtn{
+    .learn-btn{
         margin: 7px 0;
     }
     .description{
@@ -266,10 +275,10 @@ body{
         font-size: 15px;
         line-height: 20px;
     }
-    .clientLogo{ 
+    .client-logo{ 
         width: 40%;
     }
-    .learnBtn{
+    .learn-btn{
         margin: 15px auto 50px auto;
         background-color: hsl(0, 0%, 8%);
         color: hsl(0, 0%, 98%);
