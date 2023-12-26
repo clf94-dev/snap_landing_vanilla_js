@@ -88,6 +88,7 @@ li.company-tab, li.features-tab{
 .options-company.active {
     display: block;
     position: absolute;
+    width:100%;
     top: 30px;
     right: 15px;
     padding: 10px 20px;
