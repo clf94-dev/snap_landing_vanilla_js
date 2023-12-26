@@ -30,9 +30,12 @@ const navSlide = () => {
         if(featuresDropdown.classList.contains('active')){
             featuresDropdown.classList.remove('active')
             featuresOptions.classList.remove('active')
+
         }else {
             featuresDropdown.classList.add('active')
             featuresOptions.classList.add('active')
+            companyDropdown.classList.remove('active')
+            companyOptions.classList.remove('active')
         }
     })
     companyDropdown.addEventListener('click', () => {
@@ -42,6 +45,8 @@ const navSlide = () => {
         }else {
             companyDropdown.classList.add('active')
             companyOptions.classList.add('active')
+            featuresDropdown.classList.remove('active')
+            featuresOptions.classList.remove('active')
         }
     })
 }
